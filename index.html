@@ -13,32 +13,117 @@
   </head>
   <body>
     <!-- Nav for sm-screens -->
-    <nav class="navbar navbar-expand-sm w-100">
+    <nav class="navbar navbar-expand-sm w-100 position-absolute">
       <div class="brand">
         <a class="navbar-brand" href="#">
-          <div class="px-2">
+          <div class="px-2 text-white">
             Anthony Wong
           </div>
         </a>
       </div>
       <div class="d-none d-sm-flex flex-grow-1" id="smNavbar">
         <div class="navbar-nav ml-auto" id="smNavbar-items">
-          <a class="nav-item nav-link" href="about_me">About Me</a>
-          <a class="nav-item nav-link" href="portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="contact">Contact</a>
+          <a class="nav-item nav-link text-white" href="#about-me">About Me</a>
+          <a class="nav-item nav-link text-white" href="#projects">Projects</a>
+          <a class="nav-item nav-link text-white" href="#contact">Contact</a>
         </div>
       </div>
     <!-- Nav for toggle menu -->
       <a class="navbar-toggler navbar-brand text-muted" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fas fa-bars"></i></a>
       <div class="navbar-collapse collapse bg-white" id="navbarMenu">
         <div>
-          <a class="nav-item nav-link mb-4 nav-content" href="#">About Me</a>
-          <a class="nav-item nav-link mb-4 nav-content" href="#">Portfolio</a>
-          <a class="nav-item nav-link mb-4 nav-content" href="#">Contact</a>
+          <a class="nav-item nav-link mb-4 nav-content" href="#about-me">About Me</a>
+          <a class="nav-item nav-link mb-4 nav-content" href="#projects">Projects</a>
+          <a class="nav-item nav-link mb-4 nav-content" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-    abc
+    <!-- home -->
+    <div id="home">
+      <div class="container" id="intro">
+        <div class="row">
+          <div class="col-12 text-center" id="intro-pic">
+            <img class="img-fluid rounded mx-auto" src="./images/me.png" width="100" height="60">
+          </div>
+        </div>
+        <div class="row text-white">
+          <div class="col-12" id="intro_text">
+            <h3>Anthony Wong</h3>
+            <hr class="intro-divider"/>
+            <p>Lawyer by day. Tech enthusiast by night.</p>
+            <h4>I aspire to create things that make the world better.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+    <div id="about-me">
+      <div class="container">
+        <div class="row" id="about-me-title">
+          <div class="col-12">
+            <h4>about anthony wong</h4>
+          </div>
+        </div>
+        <div class="row justify-content-around" id="about-me-content-box">
+          <div class="col-12 col-md-5" id="about-me-content-box-left">
+            <div class="content-left content">
+              <h5 class="day">
+                Day
+              </h5>
+              <i class="fas fa-sun" id="logo"></i>
+              <div class="description">
+                <p>
+                  I am a HK-qualified lawyer working in the Banking and Finance group of Stephenson Harwood’s Hong Kong office with a focus on general banking, ship finance and international trade finance matters.
+                  <br>
+                  <br>
+                  I have experience in advising leading banks, financial institutions and fintechs on the drafting of loan and security documentation, trade finance documentation as well as general commercial and retail banking documentation. He also advises on trade finance disputes regularly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 text-white" id="about-me-content-box-right">
+            <div class="content-right content">
+              <h5 class="night">
+                Night
+              </h5>
+              <i class="fas fa-moon" id="logo"></i>
+              <div class="description">
+                <p>
+                  I have keen interest in tech industry.
+                  <br>
+                  <br>
+                  Having taken Oxford Online Fintech Course, I am now undertaking the full-stack web development online programme offered by Altcademy.
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- projects -->
+    <div id="projects">
+      <div class="container">
+        <div class="row" id="projects-title">
+          <div class="col-12">
+            <h4>projects</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            abc
+          </div>
+          <div class="col-4">
+            def
+          </div>
+          <div class="col-4">
+            ghi
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
