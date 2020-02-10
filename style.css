@@ -1,0 +1,51 @@
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  border-bottom: 1px solid grey;
+}
+
+.brand {
+  position: absolute;
+  left: 30px;
+}
+
+#smNavbar {
+  display: block;
+  padding: 20px 30px;
+}
+
+@media (max-width: 576px) {
+  #smNavbar {
+    display: none;
+  }
+}
+
+#mdNavbar-items {
+  margin-left: 20px;
+}
+
+#mdNavbar-items .nav-item {
+  padding-left: 60px;
+}
+
+#navbarMenuToggler {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+@media (min-width: 575.98px) {
+  #navbarMenu {
+    display: none !important;
+  }
+}
+
+#navbarMenu {
+  position: absolute;
+  top: 70px;
+  right: -15px;
+  left: -15px;
+  height: 3000px;
+  z-index: 2;
+}
