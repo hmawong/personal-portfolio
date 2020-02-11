@@ -29,9 +29,21 @@
     margin-bottom: 30px;
   }
 
-  #about-me-content-box-left {
-    padding-bottom: 30px;
+  #about-me-content-box {
+    margin-left: 10px;
+    margin-right: 10px;
   }
+
+  #about-me-content-box-left {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #about-me-content-box-right {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
 }
 
 #mdNavbar-items {
@@ -59,8 +71,9 @@
   top: 70px;
   right: -15px;
   left: -15px;
-  height: 300px;
+  height: 200px;
   z-index: 2;
+  background: linear-gradient(#38586f, #557e9c);
 }
 
 #home {
@@ -68,6 +81,11 @@
   background-size: cover;
   background-position: center bottom;
   height: 650px;
+}
+
+.nav-content {
+  position: relative;
+  left: 38px;
 }
 
 /*  Hero */
@@ -93,20 +111,19 @@
 
 #about-me {
   margin-bottom: 60px;
-  height: 500px;
+  max-height: 1000px;
+  display: block;
 }
 
-@media (max-width: 576px) {
-
+@media (max-width: 992px) {
+  #about-me-content-box-left {
+    margin-bottom: 60px;
+  }
 }
 
 #about-me-title {
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-#about-me-content-box {
-  height: 400px;
 }
 
 #about-me-content-box-left {
@@ -138,7 +155,76 @@
 
 /* projects */
 
+#projects {
+  background-color: rgba(0,0,0,0.08);
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
 #projects-title {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.projects-heading {
+  padding-top: 20px;
+}
+
+.projects-date {
+  font-size: 0.8rem;
+  padding-top: 5px;
+}
+
+@media (max-width: 992px) {
+  #FM2{
+    margin-top: 50px;
+  }
+}
+
+/* contact */
+
+#contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.email {
+  font-size: 0.9rem;
+}
+
+.social-media {
+  padding-top: 10px;
+}
+
+.social-media-icon {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* footer */
+footer {
+  font-size: 12px;
+}
+
+#footer-section {
+  background-color: rgba(0,0,0,0.05);
+  padding-top: 15px;
+}
+
+.footer-container {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #aw-footer {
+      padding-top: 15px;
+      text-align: center!important;
+    }
+
+    #about-me-title, #projects-title {
+      text-align: center!important;
+    }
+
 }

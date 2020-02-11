@@ -23,23 +23,23 @@
       </div>
       <div class="d-none d-sm-flex flex-grow-1" id="smNavbar">
         <div class="navbar-nav ml-auto" id="smNavbar-items">
-          <a class="nav-item nav-link text-white" href="#about-me">About Me</a>
+          <a class="nav-item nav-link text-white" href="#about-me">About</a>
           <a class="nav-item nav-link text-white" href="#projects">Projects</a>
           <a class="nav-item nav-link text-white" href="#contact">Contact</a>
         </div>
       </div>
     <!-- Nav for toggle menu -->
-      <a class="navbar-toggler navbar-brand text-muted" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fas fa-bars"></i></a>
-      <div class="navbar-collapse collapse bg-white" id="navbarMenu">
+      <a class="navbar-toggler navbar-brand text-white" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fas fa-bars"></i></a>
+      <div class="navbar-collapse collapse" id="navbarMenu">
         <div>
-          <a class="nav-item nav-link mb-4 nav-content" href="#about-me">About Me</a>
-          <a class="nav-item nav-link mb-4 nav-content" href="#projects">Projects</a>
-          <a class="nav-item nav-link mb-4 nav-content" href="#contact">Contact</a>
+          <a class="nav-item nav-link mt-3 mb-3 nav-content text-white" href="#about-me">About Me</a>
+          <a class="nav-item nav-link mb-3 nav-content text-white" href="#projects">Projects</a>
+          <a class="nav-item nav-link mb-3 nav-content text-white" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
     <!-- home -->
-    <div id="home">
+    <section id="home">
       <div class="container" id="intro">
         <div class="row">
           <div class="col-12 text-center" id="intro-pic">
@@ -55,9 +55,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- about me -->
-    <div id="about-me">
+    <section id="about-me">
       <div class="container">
         <div class="row" id="about-me-title">
           <div class="col-12">
@@ -65,13 +65,13 @@
           </div>
         </div>
         <div class="row justify-content-around" id="about-me-content-box">
-          <div class="col-12 col-md-5" id="about-me-content-box-left">
+          <div class="col-12 col-lg-5" id="about-me-content-box-left">
             <div class="content-left content">
               <h5 class="day">
                 Day
               </h5>
               <i class="fas fa-sun" id="logo"></i>
-              <div class="description">
+              <div class="description text-justify">
                 <p>
                   I am a HK-qualified lawyer working in the Banking and Finance group of Stephenson Harwood’s Hong Kong office with a focus on general banking, ship finance and international trade finance matters.
                   <br>
@@ -81,13 +81,13 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-5 text-white" id="about-me-content-box-right">
+          <div class="col-12 col-lg-5 text-white" id="about-me-content-box-right">
             <div class="content-right content">
               <h5 class="night">
                 Night
               </h5>
               <i class="fas fa-moon" id="logo"></i>
-              <div class="description">
+              <div class="description text-justify">
                 <p>
                   I have keen interest in tech industry.
                   <br>
@@ -101,10 +101,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <hr />
+    </section>
     <!-- projects -->
-    <div id="projects">
+    <section id="projects">
       <div class="container">
         <div class="row" id="projects-title">
           <div class="col-12">
@@ -112,18 +111,67 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-4">
-            abc
+          <div class="col-12 col-md-6 col-lg-4" id="web">
+            <img class="img-fluid h-400 rounded" src='./images/portfolio.jpg' />
+            <h5 class="projects-heading"><a class="text-dark" href="#">Web Development</a></h5>
+            <div class="projects-summary text-justify">
+              abc
+            </div>
+            <div class="projects-date">
+              since 2020 · <a class="tag_colour" href="#">Self</a>
+            </div>
           </div>
-          <div class="col-4">
-            def
+          <div class="col-12 col-md-6 col-lg-4" id="l&f">
+            <img class="img-fluid h-400 rounded" src='./images/lost_found_post90s.jpg' />
+            <h5 class="projects-heading"><a class="text-dark" href="#">Lost & Found: Post 90s</a></h5>
+            <div class="projects-summary text-justify">
+              abc
+            </div>
+            <div class="projects-date">
+              2013 - 2015 · <a class="tag_colour" href="#">Thought Leadership</a>
+            </div>
           </div>
-          <div class="col-4">
-            ghi
+          <div class="col-12 col-lg-4" id="FM2">
+            <img class="img-fluid h-400 rounded" src='./images/film.jpg' />
+            <h5 class="projects-heading"><a class="text-dark" href="#">FM2</a></h5>
+            <div class="projects-summary text-justify">
+              abc
+            </div>
+            <div class="projects-date">
+              since 2011 · <a class="tag_colour" href="#">Analogue Photography</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- contact -->
+    <section class="text-center" id="contact">
+      <div class="container">
+        <h5>contact</h5>
+        <div class="email">
+          wonghoming.app@gmail.com
+        </div>
+        <div class="social-media">
+          <a class="social-media-icon text-muted" href="https://www.linkedin.com/in/hmawong/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-media-icon text-muted" href="https://github.com/hmawong" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="social-media-icon text-muted" href="https://www.facebook.com/hmawong" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-media-icon text-muted" href="https://www.instagram.com/wonghoming" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section id="footer-section">
+    <footer class="container footer-container">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-6">
+          <span class="text-secondary text-justify disclaimer">Disclaimer: This is a personal website of Anthony Wong, and is not intended to advertise or solicit any business as a legal professional.</span>
+        </div>
+        <div class="col-12 col-md-4 text-right" id="aw-footer">
+          <span class="text-secondary">© Anthony Wong. 2020</span>
+        </div>
+      </div>
+    </footer>
+  </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
